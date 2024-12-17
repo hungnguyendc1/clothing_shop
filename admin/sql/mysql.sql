@@ -3,7 +3,7 @@ SET time_zone = "+00:00";
 
 -- Cấu trúc bảng cho bảng `admin`
 
-CREATE TABLE `admin` (
+CREATE TABLE `ADMIN` (
   `ID` varchar(5) NOT NULL,
   `Name` varchar(255) NOT NULL,
   `Email` varchar(255) NOT NULL,
@@ -16,7 +16,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- Đang đổ dữ liệu cho bảng `admin`
-INSERT INTO `admin` (`ID`, `Name`, `Email`, `Passwd`, `Image`, `Contact`, `Address`, `Position`, `About`) VALUES
+INSERT INTO `ADMIN` (`ID`, `Name`, `Email`, `Passwd`, `Image`, `Contact`, `Address`, `Position`, `About`) VALUES
 ('adm12', 'Yves', 'test@abc.com', 'admin', 'yves.jpg', '012345678', '255 An Duong Vuong Str D5 HCMC', 'Kế Toán Bán Hàng', 'Nhân Viên Mới'),
 ('adm15', 'Hắc Tún', 'admin@admin.com', 'admin', 'irene.jpeg', '0586128566', '80 79Str. Tan Quy D7', 'RedVelvet Irene', 'Test                                                        '),
 ('test1', 'test', 'chu@chu.com', 'admin', '98489932_973836263052754_3130673838979809280_n.jpg', 'test', 'test', 'test', 'test                                                                                    ');
@@ -162,7 +162,7 @@ INSERT INTO `SP` (`MA_SP`, `TEN_SP`, `MA_LOAISP`, `MA_HANGSX`, `MIEUTA_SP`, `HIN
 
 -- Chỉ mục cho bảng `admin`
 
-ALTER TABLE `admin`
+ALTER TABLE `ADMIN`
   ADD PRIMARY KEY (`ID`);
 
 

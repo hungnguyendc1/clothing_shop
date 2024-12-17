@@ -92,7 +92,7 @@
         $admin_email = mysqli_real_escape_string($MyConn->getConn(),$_POST['admin_email']);
         $admin_pass = mysqli_real_escape_string($MyConn->getConn(),$_POST['passwd']);
 
-        $query = "select * from admin where Email='$admin_email' AND Passwd='$admin_pass'";
+        $query = "select * from ADMIN where Email='$admin_email' AND Passwd='$admin_pass'";
 
         $result = $MyConn->query($query);
 

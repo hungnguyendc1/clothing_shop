@@ -141,7 +141,7 @@ else {
 
         move_uploaded_file($tmp_img,"admin_images/$admin_image");
 
-        $insertQry = "insert into `admin` (`ID`, `Name`, `Email`, `Passwd`, `Image`, `Contact`, `Address`, `Position`, `About`) VALUES ('$admin_id', '$admin_name', '$admin_email', '$admin_pass', '$admin_image', '$admin_contact', '$admin_address', '$admin_pos', '$admin_about');";
+        $insertQry = "insert into `ADMIN` (`ID`, `Name`, `Email`, `Passwd`, `Image`, `Contact`, `Address`, `Position`, `About`) VALUES ('$admin_id', '$admin_name', '$admin_email', '$admin_pass', '$admin_image', '$admin_contact', '$admin_address', '$admin_pos', '$admin_about');";
     
         $executeQry = $MyConn->query($insertQry);
 

@@ -12,7 +12,7 @@ else {
 
         $admin_id = $_GET['delete_admin'];
 
-        $deleteQuery = "delete from admin where ID='$admin_id'";
+        $deleteQuery = "delete from ADMIN where ID='$admin_id'";
 
 
         $execute = $MyConn->query($deleteQuery);

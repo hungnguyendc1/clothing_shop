@@ -11,7 +11,7 @@ else {
 
         $admin_id = $_GET['edit_admin'];
 
-        $query = "select * from admin where ID='$admin_id'";
+        $query = "select * from ADMIN where ID='$admin_id'";
 
         $run_query = $MyConn->query($query);
 
@@ -170,7 +170,7 @@ else {
 
         move_uploaded_file($tmp_img,"admin_images/$admin_image");
 
-        $update_admin = "update admin set ID='$admin_id', Name='$admin_name', Email='$admin_email',Passwd='$admin_pass',Image='$admin_image',Contact='$admin_contact',Address='$admin_address',Position='$admin_pos',About='$admin_about' where ID='$cur_id'";
+        $update_admin = "update ADMIN set ID='$admin_id', Name='$admin_name', Email='$admin_email',Passwd='$admin_pass',Image='$admin_image',Contact='$admin_contact',Address='$admin_address',Position='$admin_pos',About='$admin_about' where ID='$cur_id'";
 
 
         

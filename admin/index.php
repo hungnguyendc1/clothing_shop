@@ -20,7 +20,7 @@ $MyConn = new MyConnect();
 $admin_session = $_SESSION['admin_email'];
 
 
-$getAdminQry = "select * from admin where Email='$admin_session'";
+$getAdminQry = "select * from ADMIN where Email='$admin_session'";
 
 
 
