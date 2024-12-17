@@ -13,6 +13,12 @@ if (isset($_POST['login'])) {
 
     $row = mysqli_fetch_array($execute);
 
+    if ($row === null) { // Check if no data was fetched
+        echo "<script>alert('Địa Chỉ Email Hoặc Mật Khẩu Không Đúng')</script>";
+        echo "<script>window.history.back();</script>";
+        die();
+    }
+
     $result = count($row);
 
     $userID = $row['MA_KH'];
@@ -31,11 +37,6 @@ if (isset($_POST['login'])) {
 
 
         $_SESSION['user_email'] = $email;
-
-        echo "<script>window.history.back();</script>";
-    } else {
-
-        echo "<script>alert('Địa Chỉ Email Hoặc Mật Khẩu Không Đúng')</script>";
 
         echo "<script>window.history.back();</script>";
     }
