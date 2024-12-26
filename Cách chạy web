@@ -1,0 +1,2 @@
+Trước tiên, hãy tạo một cơ sở dữ liệu có tên là “clothingshop” trên phpMyAdmin trong XAMPP. Sau đó, nhập dữ liệu từ tệp “db/clothingshop.sql” vào cơ sở dữ liệu này
+Và vào chạỵ trên http://localhost/
