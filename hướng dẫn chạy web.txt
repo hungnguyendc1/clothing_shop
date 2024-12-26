@@ -1,0 +1,3 @@
+Trước tiên, hãy tạo một cơ sở dữ liệu có tên là “clothingshop” trên phpMyAdmin trong XAMPP. Sau đó, nhập dữ liệu từ tệp “db/clothingshop.sql” vào cơ sở dữ liệu này.
+
+Sau khi cài đặt cơ sở dữ liệu, bạn có thể chạy ứng dụng web bằng cách truy cập vào đường dẫn sau trong trình duyệt của bạn: “http://localhost
